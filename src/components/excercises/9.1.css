@@ -1,0 +1,16 @@
+@keyframes spiner2{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+.spiner2{
+  height: 100px;
+  width: 100px;
+  border-top: 3px solid aqua;
+  border-right: 5px solid black;
+  border-radius: 50%;
+  position: relative;
+  animation-name: spiner2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

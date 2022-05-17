@@ -1,0 +1,10 @@
+.box{
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+.inner{
+  width: 150 px;
+  height: 150px;
+  background-color: blue;
+}
