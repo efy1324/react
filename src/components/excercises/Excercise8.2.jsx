@@ -12,7 +12,7 @@ export default class E8_2 extends Component {
   }
   componentDidUpdate() {
     setTimeout(() => {
-      this.setState({ Ishidden: false })
+      this.setState(prevState =>({ Ishidden: prevState.Ishidden = false}))
     }, 4000)
   }
   render() {

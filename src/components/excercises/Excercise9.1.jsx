@@ -5,7 +5,9 @@ export default class Ex9_1 extends React.Component {
   state = { show: true }
   componentDidMount() {
     setTimeout(() => {
-      this.setState({ show: false })
+      this.setState((prevState) => {
+        return { show: prevState.show = false }
+      })
     }, 5000);
   }
 
@@ -15,6 +17,5 @@ export default class Ex9_1 extends React.Component {
     </div>
 
   }
-
 
 }

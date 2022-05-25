@@ -7,7 +7,7 @@ export default class Ex81 extends Component {
   state = { favoriteColor: "blue" }
   componentDidMount() {
     setTimeout(() => {
-      this.setState({ favoriteColor: "green" })
+      this.setState(prevState =>({ favoriteColor: prevState.favoriteColor = "green" }))
     }, 1000)
   }
   componentDidUpdate(){
